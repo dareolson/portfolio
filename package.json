@@ -1,0 +1,23 @@
+{
+  "name": "consultare",
+  "version": "1.0.0",
+  "description": "website for consultare",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dareolson/portfolio.git"
+  },
+  "author": "Derek Olson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dareolson/portfolio/issues"
+  },
+  "homepage": "https://github.com/dareolson/portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.6.0",
+    "sass": "^1.0.0-beta.3"
+  }
+}
