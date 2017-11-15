@@ -34,28 +34,33 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
+
   
-.header__logo-box {
+	&__logo-box {
     position: absolute;
     top: 2rem;
-    left: 2rem; }
+    left: 2rem; 
+}
   
-.header__logo {
-    height: 3.5rem; }
+	&__logo {
+    height: 3.5rem; 
+}
 
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+	&__text-box {
+  	position: absolute;
+  	top: 40%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center; 
+	}
+}
 
 .heading-primary {
   color: $color-gray-dark;
-  text-transform: uppercase; }
+  text-transform: uppercase;
 
-.heading-primary--main {
+&--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -66,7 +71,7 @@ body {
   -webkit-backface-visibility: hidden;
   margin-bottom: 6rem; }
 
-.heading-primary--sub {
+&--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -75,6 +80,7 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out;
   margin-bottom: 2rem; }
+}
 
 @keyframes moveInLeft {
   0% {
@@ -104,8 +110,9 @@ body {
     opacity: 1;
     transform: translateX(0); } }
 
-.btn:link,
-.btn:visited {
+.btn {
+&:link,
+&:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -115,19 +122,26 @@ body {
   position: relative;
   font-size: 1.6rem; }
 
-.btn:hover {
+&:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba($color-black, 0.2); }
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  &::after {
+  transform: scale(1.08);
+  opacity: 0; } }
 
-.btn:active {
+&:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2); }
 
-.btn--white {
+&--white {
   background-color: $color-gray-dark;
-  color: $color-white; }
+  color: $color-white; 
+	
+	&::after {
+  	background-color: $color-gray-dark; }
+}
 
-.btn::after {
+&::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -139,13 +153,8 @@ body {
   z-index: -1;
   transition: all .2s; }
 
-.btn--white::after {
-  background-color: $color-gray-dark; }
 
-.btn:hover::after {
-  transform: scale(1.08);
-  opacity: 0; }
-
-.btn--animated {
+&--animated {
   animation: moveInBottom .8s ease-out .75s;
   animation-fill-mode: backwards; }
+}
