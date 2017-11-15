@@ -14,12 +14,12 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  padding: 6rem;
+  padding: 2rem;
   box-sizing: border-box; }
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(137, 180, 249, 0.6), rgba(34, 67, 150, 0.8)), url(../img/Backdrop2.jpg);
+  background-image: linear-gradient(to right bottom, rgba(28, 70, 137, 0.6), rgba(66, 134, 244, 0.5)), url(../img/Backdrop2.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -27,10 +27,10 @@ body {
 
 .header__logo-box {
   position: absolute;
-  top: 1rem;
-  left: 1rem; }
+  top: 2rem;
+  left: 2rem; }
 
-.header __logo {
+.header__logo {
   height: 3.5rem; }
 
 .header__text-box {
@@ -100,7 +100,7 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
-  transition: all .2s;
+  transition: all .3s;
   position: relative;
   font-size: 1.6rem; }
 
@@ -132,7 +132,7 @@ body {
   background-color: #fff; }
 
 .btn:hover::after {
-  transform: scale(1.05);
+  transform: scale(1.08);
   opacity: 0; }
 
 .btn--animated {
