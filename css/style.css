@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -203,5 +204,24 @@ body {
       transform: scale(1.08);
       opacity: 0; }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.bullet :before {
+  content: "•   "; }
+
 .u-center-text {
   text-align: center; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
