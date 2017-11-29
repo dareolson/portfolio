@@ -129,6 +129,10 @@
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #4286f4, #1c4689); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #59e587, #24af52); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -143,9 +147,9 @@
     .card__picture--1 {
       background-image: url(../img/nat-5.jpg), linear-gradient(to right bottom, #4286f4, #1c4689); }
     .card__picture--2 {
-      background-image: url(../img/nat-5.img); }
+      background-image: url(../img/nat-5.jpg), linear-gradient(to right bottom, #ffb900, #ff7730); }
     .card__picture--3 {
-      background-image: url(../img/nat-5.img); }
+      background-image: url(../img/nat-5.jpg), linear-gradient(to right bottom, #59e587, #24af52); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -161,6 +165,12 @@
     box-decoration-break: clone; }
     .card__heading--span-1 {
       background-image: linear-gradient(to right bottom, rgba(66, 134, 244, 0.85), rgba(28, 70, 137, 0.85));
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.55); }
+    .card__heading--span-2 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.55); }
+    .card__heading--span-3 {
+      background-image: linear-gradient(to right bottom, rgba(89, 229, 135, 0.85), rgba(36, 175, 82, 0.85));
       box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.55); }
   .card__details {
     padding: 3rem; }
