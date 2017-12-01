@@ -6,6 +6,13 @@
 	width: 100%;
 	z-index: -1;
 	opacity: .3;
-	filter: blur(2px) brightness(60%)
+	filter: blur(1.5px) brightness(60%);
+	overflow: hidden;
+
+	&__content {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
 
 }
