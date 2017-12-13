@@ -34,9 +34,7 @@
 	}
 
 
-	&::-webkit-input-placeholder {
-		color: $color-gray-dark-2;
-	}
+	
 
 	&__label {
 		font-size: 1.2rem;
@@ -56,8 +54,14 @@
 
 	&__radio--group {
 		@include clearfix;
-		width: 90%;
+		width: 49%;
 		display: inline-block;
+		padding: 1.5rem;
+
+	}
+
+	&__radio--input {
+		display:none;
 	}
 
 	&__radio--label {
@@ -90,11 +94,11 @@
 			background-color: $color-primary;
 			opacity: 0;
 			transition: opacity .2s;
-
 		}
+		
 	}
 
-	&__radio--input:checked + &__radio--label + & __radio--button::after {
+	&__radio--input:checked ~ &__radio--label &__radio--button::after{
 		opacity: 1;
 	}
 }
