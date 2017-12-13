@@ -314,6 +314,46 @@
   visibility: hidden;
   transform: translateY(-4rem); }
 
+.form__radio--group {
+  width: 90%;
+  display: inline-block; }
+  .form__radio--group::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.form__radio--label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 5rem; }
+
+.form__radio--button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid #5f7eaf;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 1.7; }
+  .form__radio--button::after {
+    content: "";
+    display: block;
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 18%;
+    left: 18%;
+    transform: translate -50%, -50%;
+    background-color: #5f7eaf;
+    opacity: 0;
+    transition: opacity .2s; }
+
+.form__radio--input:checked + .form__radio--label + .form __radio--button::after {
+  opacity: 1; }
+
 ::after {
   content: "";
   display: table;
@@ -322,7 +362,7 @@
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
-  margin-top: -20vh; }
+  margin-top: -10vh; }
 
 .section-features {
   margin-top: -10rem;
