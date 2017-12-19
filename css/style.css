@@ -51,16 +51,16 @@
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #1c4689;
+  color: #968109;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #5f7eaf;
+  border-bottom: 1px solid #f1c40f;
   padding: 3px;
   transition: all .2s;
   border: none; }
 
 .btn-text:hover {
-  background-color: #5f7eaf;
+  background-color: #f1c40f;
   color: white;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
@@ -89,7 +89,7 @@
       left: 20%;
       top: 10rem; }
     .composition__photo:hover {
-      outline: 1.5rem solid #5f7eaf;
+      outline: 1.5rem solid #f1c40f;
       transform: scale(1.1) translateY(-1.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
@@ -109,7 +109,7 @@
     font-size: 6rem;
     display: inline-block;
     margin-bottom: .5rem;
-    background-image: linear-gradient(to right, #4286f4, #1c4689);
+    background-image: linear-gradient(to right, #ffe242, #968109);
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
@@ -136,7 +136,7 @@
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #4286f4, #1c4689); }
+        background-image: linear-gradient(to right bottom, #ffe242, #968109); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       .card__side--back-3 {
@@ -155,7 +155,7 @@
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: url(../img/nat-5.jpg), linear-gradient(to right bottom, #4286f4, #1c4689); }
+      background-image: url(../img/nat-5.jpg), linear-gradient(to right bottom, #ffe242, #968109); }
     .card__picture--2 {
       background-image: url(../img/nat-5.jpg), linear-gradient(to right bottom, #ffb900, #ff7730); }
     .card__picture--3 {
@@ -174,7 +174,7 @@
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading--span-1 {
-      background-image: linear-gradient(to right bottom, rgba(66, 134, 244, 0.85), rgba(28, 70, 137, 0.85));
+      background-image: linear-gradient(to right bottom, rgba(255, 226, 66, 0.85), rgba(150, 129, 9, 0.85));
       box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.55); }
     .card__heading--span-2 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
@@ -293,7 +293,7 @@
   .form__input:focus {
     outline: none;
     box-shadow: -0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
-    border-bottom: 4px solid #5f7eaf; }
+    border-bottom: 4px solid #f1c40f; }
   .form__input:focus:invalid {
     border-bottom: 4px solid #ff7730; }
   .form__input::-webkit-input-placeholder {
@@ -334,7 +334,7 @@
 .form__radio--button {
   height: 3rem;
   width: 3rem;
-  border: 5px solid #5f7eaf;
+  border: 5px solid #f1c40f;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -350,7 +350,7 @@
     top: 18%;
     left: 18%;
     transform: translate -50%, -50%;
-    background-color: #5f7eaf;
+    background-color: #f1c40f;
     opacity: 0;
     transition: opacity .2s; }
 
@@ -374,17 +374,32 @@
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-    display: table; }
+    display: table;
+    overflow: hidden; }
   .popup__left {
     width: 33.3333333%;
     display: table-cell; }
   .popup__right {
     width: 66.666666667%;
     display: table-cell;
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding: 1rem 2rem; }
   .popup__img {
     display: block;
     width: 100%; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 2rem;
+    -moz-column-rule: 1px solid #eee;
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: 1px solid #eee;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; }
 
 ::after {
   content: "";
@@ -399,7 +414,7 @@
 .section-features {
   margin-top: -10rem;
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(28, 70, 137, 0.6), rgba(66, 134, 244, 0.5)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(150, 129, 9, 0.6), rgba(255, 226, 66, 0.5)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg); }
   .section-features > * {
@@ -416,7 +431,7 @@
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #4286f4, #1c4689); }
+  background-image: linear-gradient(to right bottom, #ffe242, #968109); }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
@@ -430,7 +445,7 @@
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(28, 70, 137, 0.6), rgba(66, 134, 244, 0.5)), url(../img/Backdrop2.jpg);
+  background-image: linear-gradient(to right bottom, rgba(150, 129, 9, 0.6), rgba(255, 226, 66, 0.5)), url(../img/Backdrop2.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -503,7 +518,7 @@
     display: inline-block;
     transition: all .2s; }
   .footer__link:hover, .footer__link:active {
-    color: #5f7eaf;
+    color: #f1c40f;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(2deg) scale(1.1); }
   .footer__copyright {
@@ -535,7 +550,7 @@
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#4286f4, #1c4689);
+  background-image: radial-gradient(#ffe242, #968109);
   z-index: 1000;
   -webkit-transition: transform 0.8s cubic-bezier(0, 0, 0.07, 1);
   transition: transform 0.8s cubic-bezier(0, 0, 0.07, 1); }
@@ -578,7 +593,7 @@
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #5f7eaf;
+  color: #f1c40f;
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
@@ -698,7 +713,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #4286f4, #1c4689);
+  background-image: linear-gradient(to right, #ffe242, #968109);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
