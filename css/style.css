@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/*
+0-600 px: phone
+900-1200 tablet landscape
+600-900: tablet portrait
+(1200-1800) is where normal styles apply/desktop first
+1800plus big desktop
+*/
 .btn {
   border: none;
   cursor: pointer; }
@@ -672,6 +679,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box; }
 
 @keyframes moveInLeft {
   0% {

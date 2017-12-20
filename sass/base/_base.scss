@@ -7,4 +7,24 @@
 
 html {
   //defines what is 1 rem
-  font-size: 62.5%; }
+  font-size: 62.5%;
+
+  @include respond(tab-landscape){
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-portrait){
+    font-size: 50%; //1rem = 9
+  }
+
+  @include respond(big-desktop){
+    font-size: 75%; //1rem = 12px, 12/16
+  }
+
+
+
+ }
+
+body {
+  box-sizing: border-box;
+}
