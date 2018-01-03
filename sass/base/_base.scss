@@ -3,18 +3,19 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
   //defines what is 1 rem
-  font-size: 62.5%;
+  font-size: 62.5%; //1rem = 10px
 
   @include respond(tab-landscape){
     font-size: 56.25%;
   }
 
-  @include respond(tab-portrait){
-    font-size: 50%; //1rem = 9
+  @include respond(tab-port){
+    font-size: 50%; //1rem = 9px 9/16
   }
 
   @include respond(big-desktop){
@@ -27,4 +28,9 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 2rem;
+
+  @include respond(tab-port){
+    padding: 0;
+  }
 }
